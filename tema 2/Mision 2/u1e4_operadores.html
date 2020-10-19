@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+function mostrarMensaje() {
+    var a, b, c, d, eTexto;
+        a = 2; b = 7; c = true; d = false; eTexto = '1';
+            //A + B es diferente a 8 y a- b es diferente a 1 = verdadero porque no se cumplen las dos cosas
+            alert ('VERDADERO' + (a+b != 8 && a-b != 1));
+
+            //a + b es igual 8 o a - b es igual a -2 = falso ninguna de las dos se cumple
+            alert ('FALSO: ' + (a+b == 8 || a-b ==-2));
+
+            //c = true es mayor que d = false es verdadero
+            alert ('VERDADERO: ' + (c > d));
+
+            //c es menor que d = false es al reves
+            alert ('FALSO: ' + (c < d));
+
+            //en esta no se que operador es ya que solo tiene una variable 
+          //  alert ('FALSO: ' + (# a));
+
+            //eTexto es igual estrictamente a 1 no por las comillas simples de la variable e Texto 
+            alert ('FALSO: ' + (eTexto === 1));
+
+            //lAS 2 varaibles tienen que seas ciertas por lo que es falso
+            alert ('FALSO: ' + (eTexto === 1 && eTexto != "Caracol"));
+            
+            //la desigualdad estricta se cumple por lo que es cierto
+            alert ('VERDADERO: ' + ('Zapato' !== 'almendra'));
+}
+mostrarMensaje();
+</script>
+</head>
+<body>
+</body>
+</html> 

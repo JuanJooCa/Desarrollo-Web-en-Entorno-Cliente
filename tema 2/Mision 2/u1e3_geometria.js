@@ -1,4 +1,4 @@
-//En este fichero estan las formulas.
+//En este fichero estan las funciones con las formulas.
 function areaTriangulo (b,a){
     return b * a / 2;
 }

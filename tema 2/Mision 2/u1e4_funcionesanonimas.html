@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<script>
+            //Funciones anonimas 
+            var aTriangulo = function (b,a){return b * a / 2;}
+            var aTrI = aTriangulo(2,3);
+
+            alert("El area del triangulo es " + aTrI);
+
+            var pTriEqui = function (l){return l + l + l;}
+            var ptE = pTriEqui(5);
+
+            alert("El perimetro del triangulo equilatero es " + ptE); 
+
+            var pTriIso = function (l1, l2, b){return l1 + l2 + b;}
+            var ptI = pTriIso(5,6,7);
+
+            alert("El perimetro del triangulo isosceles es " + ptI);
+        
+            var pTriEsc = function (l1,l2,l3){return l1 + l2 + l3;}
+            var ptEsc = pTriEsc(2,8,10);
+
+            alert("El perimetro del triangulo escaleno es " + ptEsc);
+            
+            //Creamos los constructores para las funciones
+            var aCuad = new aCuadrado ("l", "return l += 2;");
+            var aC = aCuad(5);
+
+            alert("El area del cuadrado es " + aC);
+
+            var pCuad = new pCuadrado ("l", "return l + l + l + l;");
+            var pC = pCuad(10);
+
+            alert("El perimetro del cuadrado es " + pC);
+
+            var aRec = new aRectangulo ("l1","l2","return l1 * l2;");
+            var aR = aRec(20,5);
+
+            alert("El area del rectangulo es " + aR);
+
+    
+            //Funciones anonimas autoinvocadas
+            (function (r) {return r *= 2; alert("El area del circulo es " + r)}(10));
+
+            (function (r) {return 2 * 3.14 * r; alert("La longitud de la circunferencia es " + r)}(10));
+
+      
+		</script>
+	</body>
+</html>
